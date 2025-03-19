@@ -1,0 +1,14 @@
+# 봇 정보
+.env
+
+# Mac 추적 파일
+.DS_Store
+
+# 데이터베이스
+*.db
+
+# 워크스페이스
+*.code-workspace
+
+# 라이브러리 폴더
+node_modules/
