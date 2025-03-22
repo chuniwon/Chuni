@@ -4,7 +4,7 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
 
-const TOKEN = process.env.CHUNI;
+const TOKEN = process.env.CHOONI;
 const CLIENT_ID = process.env.CLIENT;
 
 const commands = [
