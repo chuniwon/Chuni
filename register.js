@@ -5,7 +5,7 @@ const { Routes } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
 
 const TOKEN = process.env.CHOONI;
-const CLIENT_ID = process.env.CLIENT;
+const CLIENT_ID = process.env.CHOONI_CLIENT;
 
 const commands = [
     // ping

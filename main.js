@@ -29,7 +29,7 @@ client.once(Events.ClientReady, () => {
     client.user.setStatus('online');
 
     client.user.setPresence({
-        activities: [{ name: `/도움말`, type: ActivityType.Listening }],
+        activities: [{ name: `테스트`, type: ActivityType.Playinging }],
     });
 });
 
