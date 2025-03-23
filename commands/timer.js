@@ -53,6 +53,7 @@ module.exports = {
             const embed = new EmbedBuilder()
                 .setTitle(`${emojis.clock} 타이머 끝! ${minutes}분 지났어요!`)
                 .setDescription(`\`Started by ${displayName}\``)
+                .setColor(0xffd651)
                 .addFields(
                     { name: `시작 시간`, value: moment(activeTimers[userId].startTime).tz("Asia/Seoul").format('HH시 mm분'), inline: true },
                     { name: `종료 시간`, value: moment().tz("Asia/Seoul").format('HH시 mm분'), inline: true }

@@ -5,7 +5,7 @@ const { Routes } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
 
 const TOKEN = process.env.CHUNI;
-const CLIENT_ID = process.env.CLIENT;
+const CLIENT_ID = process.env.CHUNI_CLIENT;
 
 const commands = [
     // ping
@@ -41,33 +41,7 @@ const commands = [
                     { name: '시작', value: 'start' },
                     { name: '종료', value: 'stop' }
                 )
-        ),
-
-    // 음성채널 입장
-    new SlashCommandBuilder()
-        .setName('입장')
-        .setDescription('원하는 음성채널에 처니를 불러주세요~!')
-        .addStringOption(option => 
-            option.setName('채널')
-                .setDescription('처니가 어디로 들어가면 될까요?')
-                .setRequired(true)
-        ),
-
-    // 음성채널 퇴장
-    new SlashCommandBuilder()
-        .setName('퇴장')
-        .setDescription('처니를 내쫓으시는 거예요~?!')
-        .addStringOption(option =>
-            option.setName('채널')
-                .setDescription('어느 채널에서 나갸아 하나요?ㅠㅠ')
-                .setRequired(true)
-        ),
-    
-    // 이거진짜씨발
-    new SlashCommandBuilder()
-        .setName('tts')
-        .setDescription('쉿!')
-
+        )
 ].map(command => command.toJSON());
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
